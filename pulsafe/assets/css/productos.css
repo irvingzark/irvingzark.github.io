@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background: #D1F2EB;
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    left: 0;
+    background: #D6EAF8;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0 , 0.1);
+    z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5 ease;
+    margin: 10px 0 0 10px;
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 36px;
+    text-transform: uppercase;  
+}
+
+a{
+    position: relative;
+    color: rgb(85, 85, 83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+}
+
+.nav-item{
+    position: center;
+    margin-left:10px;
+    font-size: 22px;
+
+}
+.nav-item-logo{
+    position: center;
+    top: 12px;
+    margin-left:10px;
+
+}
+
+a:hover{
+    background: #eee;
+
+}
+
+nav:hover{
+width: 280px;
+transition: all 0.5s ease;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+
+/*estilos de la info */
+
+#infonoso{
+    width: 80%;
+    margin: 2% auto;
+    background: #292929;
+    color:white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+border-radius: 45px;
+}
+
+.img-der{
+    text-align: right;
+    margin-left: 80px;
+    height: 350px;
+    width: 450px;
+    border-radius: 35px;
+}
+
+.img-izq{
+    margin-right: 80px;
+    border-radius: 35px;
+    height: 350px;
+    width: 450px;
+}
+
+.text-der h2{
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.text-izq h2{
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.text-der p{
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.text-izq p{
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+#infonoso .btn{
+    width: 80%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 15px;
+}

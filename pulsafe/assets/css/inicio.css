@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background: #D1F2EB;
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    left: 0;
+    background: #D6EAF8;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0 , 0.1);
+    z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5 ease;
+    margin: 10px 0 0 10px;
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 36px;
+    text-transform: uppercase;  
+}
+
+a{
+    position: relative;
+    color: rgb(85, 85, 83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+}
+
+.nav-item{
+    position: center;
+    margin-left:10px;
+    font-size: 22px;
+
+}
+.nav-item-logo{
+    position: center;
+    top: 12px;
+    margin-left:10px;
+
+}
+
+a:hover{
+    background: #eee;
+
+}
+
+nav:hover{
+width: 280px;
+transition: all 0.5s ease;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+
+/* slider */
+
+.slider {
+    margin: 5px 0 5px 0;
+    width: 100%;
+    overflow: hidden;
+    }
+    
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        
+        animation: cambio 20s infinite alternate linear;
+    }
+    
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .slider img {
+        height: 350px;
+    }
+    
+    @keyframes cambio {
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+        
+        25% {margin-left: -100%;}
+        45% {margin-left: -100%;}
+        
+        50% {margin-left: -200%;}
+        70% {margin-left: -200%;}
+        
+        75% {margin-left: -300%;}
+        100% {margin-left: -300%;}
+    }
+
+/* estilos de la informacion*/
+
+.info{
+    border-radius: 45px;
+    width: 80%;
+    margin: 2% auto;
+    background: #90e3f8;
+    color:black;
+    text-align: center;
+    padding: 20px;
+}
+
+img{
+    margin-top: 15px;
+    }
+
+
+@media (max-width: 480px) {
+    .info{
+        width: 75%;
+        margin-left: 100px;
+     }
+
+    .slider img{
+        height: 200px;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .info img{
+        height: 150px;
+        width: 150px;
+    }
+    
+                        }
